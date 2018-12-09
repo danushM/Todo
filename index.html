@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDWfkYe0Q-u13hV-44w85PVER6FFXZ6p8o",
+        authDomain: "todo-a58f1.firebaseapp.com",
+        databaseURL: "https://todo-a58f1.firebaseio.com",
+        projectId: "todo-a58f1",
+        storageBucket: "todo-a58f1.appspot.com",
+        messagingSenderId: "120132669211"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Todo application</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id= "share">
+        <a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
+          Share Via Email
+        </a>
+      </div>
+      <div class="controls">
+        <h1>Todo board</h1>
+        Enter your todo:<br>
+        <input type="text" id = "input"><br>
+        <button type="button" id="add">Add TODO</button>
+        <button type="button" id="remove">Remove TODO</button>
+        </div>
+        <ul id="list">
+        </ul>
+        </div>
+    <script src = "todo.js"> </script>
+  </body>
+</html>
